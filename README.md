@@ -17,7 +17,7 @@ An interactive birthday website with stunning animations and glassmorphism desig
 - Canvas-based animations
 
 ## Live Demo
-Visit: [GitHub Pages URL will be here]
+🌐 **[View Live Website](https://mridul0911.github.io/shrutii-birthday/)**
 
 ---
 Made with 💝 for Shrutii's Birthday
