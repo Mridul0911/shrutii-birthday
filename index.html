@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrutii.exe – Birthday Adventure Mode Activated</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Particles Background -->
+    <div id="particles"></div>
+
+    <!-- Music Toggle -->
+    <button id="musicToggle" class="music-toggle">🎵</button>
+    <audio id="bgMusic" loop>
+        <source src="" type="audio/mpeg">
+    </audio>
+
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen active">
+        <div class="loading-content">
+            <h1 class="glitch" data-text="Shrutii.exe">Shrutii.exe</h1>
+            <div class="terminal">
+                <p id="loadingText"></p>
+                <span class="cursor">_</span>
+            </div>
+            <button id="startBtn" class="glow-btn hidden">▶ Start Birthday Adventure</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="mainContent" class="hidden">
+
+        <!-- Section 1: Travel Mode -->
+        <section id="travelMode" class="section travel-section">
+            <div class="section-container">
+                <h2 class="section-title gradient-text">✈️ Travel Mode Activated</h2>
+                <p class="section-subtitle">Click the pins to explore...</p>
+
+                <div class="travel-map">
+                    <div class="map-overlay"></div>
+
+                    <div class="location-pin pin-1" data-pin="1">
+                        <div class="pin-marker">
+                            <div class="pin-pulse"></div>
+                            <div class="pin-icon">📍</div>
+                        </div>
+                    </div>
+
+                    <div class="location-pin pin-2" data-pin="2">
+                        <div class="pin-marker">
+                            <div class="pin-pulse"></div>
+                            <div class="pin-icon">📍</div>
+                        </div>
+                    </div>
+
+                    <div class="location-pin pin-3" data-pin="3">
+                        <div class="pin-marker">
+                            <div class="pin-pulse"></div>
+                            <div class="pin-icon">📍</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: BTS Creator Mode -->
+        <section id="creatorMode" class="section creator-section">
+            <div class="section-container">
+                <h2 class="section-title gradient-text">🎬 BTS Creator Mode</h2>
+                <p class="section-subtitle">Rendering your next cinematic year...</p>
+
+                <div class="video-editor">
+                    <div class="editor-header">
+                        <div class="editor-controls">
+                            <span class="control red"></span>
+                            <span class="control yellow"></span>
+                            <span class="control green"></span>
+                        </div>
+                        <span class="editor-title">Timeline_2025_Shrutii.mp4</span>
+                    </div>
+
+                    <div class="timeline">
+                        <div class="timeline-bar"></div>
+                    </div>
+
+                    <div class="render-progress">
+                        <div class="progress-info">
+                            <span id="renderPercent">0%</span>
+                            <span class="render-status">Rendering...</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div id="progressFill" class="progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <div id="renderComplete" class="render-complete hidden">
+                        <h3 class="render-title">Rendering: Your Next Cinematic Year</h3>
+                        <p class="render-message">
+                            You don't just live moments.<br>
+                            You capture them.<br>
+                            You turn normal into magic. ✨
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Hustle Mode -->
+        <section id="hustleMode" class="section hustle-section">
+            <div class="section-container">
+                <h2 class="section-title gradient-text">💼 Hustle Mode Engaged</h2>
+                <p class="section-subtitle">Analyzing performance metrics...</p>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">👁️</div>
+                        <h3 class="stat-label">Vision</h3>
+                        <div class="stat-bar">
+                            <div class="stat-fill" data-percent="100"></div>
+                        </div>
+                        <p class="stat-value">100%</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">🎨</div>
+                        <h3 class="stat-label">Creativity</h3>
+                        <div class="stat-bar">
+                            <div class="stat-fill" data-percent="200"></div>
+                        </div>
+                        <p class="stat-value">200%</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">⚡</div>
+                        <h3 class="stat-label">Consistency</h3>
+                        <div class="stat-bar">
+                            <div class="stat-fill legendary" data-percent="100"></div>
+                        </div>
+                        <p class="stat-value legendary-text">Legendary</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">🚀</div>
+                        <h3 class="stat-label">Future</h3>
+                        <div class="stat-bar">
+                            <div class="stat-fill" data-percent="100"></div>
+                        </div>
+                        <p class="stat-value">Massive</p>
+                    </div>
+                </div>
+
+                <p class="hustle-message">
+                    Marketing genius in progress.<br>
+                    <!-- Investor (me) ready for coffee strategy meetings. ☕ -->
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 4: Birthday Message -->
+        <section id="birthdayMessage" class="section birthday-section">
+            <div class="section-container">
+                <div id="birthdayContent" class="birthday-content">
+                    <h2 class="birthday-title">Happy Birthday Shrutii 🎉</h2>
+
+                    <div class="message-box">
+                        <p class="birthday-text">
+                            I didn't know what to gift you.<br>
+                            So I built something instead.
+                        </p>
+
+                        <p class="birthday-text">
+                            Happy Birthday Shrutii.<br>
+                            May this year bring more flights,<br>
+                            more edits,<br>
+                            more wild adventures,<br>
+                            and bigger wins.
+                        </p>
+
+                        <p class="birthday-text highlight">
+                            And maybe…<br>
+                            one unforgettable birthday adventure with me? 💫
+                        </p>
+                    </div>
+
+                    <button id="acceptBtn" class="glow-btn accept-btn">
+                        Accept Birthday Adventure Invite? 🎈
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="popup-close">&times;</span>
+            <p id="popupMessage"></p>
+        </div>
+    </div>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
